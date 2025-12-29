@@ -3,30 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuitennoc | Profile</title>
+    <title>Tuitennoc | UIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f1f5f9; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .card { background: #1e293b; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); text-align: center; max-width: 400px; width: 90%; }
-        h1 { color: #38bdf8; margin-bottom: 0.5rem; }
-        p { line-height: 1.6; color: #94a3b8; }
-        .tag { display: inline-block; background: #334155; color: #38bdf8; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin: 5px; font-weight: bold; }
-        .footer { margin-top: 2rem; font-size: 0.9rem; }
-        a { color: #38bdf8; text-decoration: none; border: 1px solid #38bdf8; padding: 8px 16px; border-radius: 5px; transition: 0.3s; }
-        a:hover { background: #38bdf8; color: #1e293b; }
+        :root { --bg-color: #151515; --text-color: #e0e0e0; --link-color: #42a5f5; }
+        body { font-family: 'Roboto', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Header & Navigation */
+        nav { text-align: right; margin-bottom: 60px; font-size: 0.9rem; }
+        nav a { color: var(--link-color); text-decoration: none; margin-left: 20px; opacity: 0.8; }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+
+        /* Profile Section */
+        .profile { display: flex; align-items: flex-start; gap: 40px; margin-bottom: 50px; flex-wrap: wrap-reverse; }
+        .bio { flex: 2; }
+        .profile-pic { flex: 1; text-align: center; }
+        .profile-pic img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 2px solid #333; }
+        
+        h1 { font-size: 2.5rem; margin: 0; font-weight: 700; color: #fff; }
+        .title { color: var(--link-color); font-size: 1.1rem; margin-top: 5px; }
+        .description { margin-top: 25px; text-align: justify; font-size: 1.05rem; }
+
+        /* Social Links */
+        .socials { margin-top: 20px; }
+        .socials a { color: var(--link-color); text-decoration: none; margin-right: 15px; font-size: 0.9rem; }
+
+        /* News Section */
+        h2 { border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; font-size: 1.5rem; }
+        .news-item { display: flex; margin-bottom: 15px; font-size: 0.95rem; }
+        .news-date { min-width: 120px; font-weight: bold; color: #888; }
+        .news-content { flex: 1; }
+
+        @media (max-width: 768px) { .profile { flex-direction: column-reverse; text-align: center; } .news-item { flex-direction: column; } }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Tuitennoc 🚀</h1>
-        <p>Sinh viên năm nhất <b>Khoa học máy tính @ UIT</b></p>
-        
-        <div style="margin: 20px 0;">
-    
+
+<div class="container">
+    <nav>
+        <a href="#">about</a>
+        <a href="#">publications</a>
+        <a href="#">projects</a>
+        <a href="#">cv</a>
+    </nav>
+
+    <div class="profile">
+        <div class="bio">
+            <h1>Tuitennoc</h1>
+            <div class="title">Computer Science Student at UIT</div>
+            
+            <div class="description">
+                Tôi hiện là sinh viên năm nhất khoa <b>Khoa học máy tính</b> tại trường <b>Đại học Công nghệ Thông tin (UIT)</b>. 
+                
+            </div>
+
+            
         </div>
+
         
-        <div class="footer">
-            <a href="https://github.com/Tuitennoc">Ghé thăm GitHub</a>
-        </div>
     </div>
+
+    <h2>news</h2>
+    
+    <div class="news-item">
+        <div class="news-date">Dec 2025</div>
+        <div class="news-content">Đang tập trung ôn luyện thuật toán và C++.</div>
+    </div>
+
+  
+
+    <div class="news-item">
+        <div class="news-date">Oct 2025</div>
+        <div class="news-content">Trở thành tân sinh viên khoa Khoa học Máy tính tại UIT </div>
+    </div>
+
+</div>
+
 </body>
 </html>
