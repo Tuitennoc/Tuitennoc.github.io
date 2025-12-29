@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuitennoc Portfolio</title>
+    <style>
+        body { background: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 100px; }
+        .box { border: 1px solid #333; display: inline-block; padding: 40px; border-radius: 20px; background: #1e1e1e; }
+        h1 { color: #00ffcc; }
+        a { color: #00ffcc; text-decoration: none; border: 1px solid #00ffcc; padding: 10px 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+      
+        <p>Chào mừng bạn đến với trang web của Tuitennoc - UIT</p>
+        <br><br>
+        <a href="CV.pdf">Xem CV của tôi</a>
+    </div>
+</body>
+</html>
